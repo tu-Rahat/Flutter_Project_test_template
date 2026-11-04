@@ -85,6 +85,23 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
+      drawer: Drawer(
+        width: 300,
+        child: Container(
+  width: 20,
+  height: 20,
+  margin: const EdgeInsets.all(4),   // OUTSIDE space
+  padding: const EdgeInsets.all(4),  // INSIDE space
+  // alignment: Alignment.center,
+  decoration: BoxDecoration(
+    color: Colors.indigo.shade50,
+    borderRadius: BorderRadius.circular(16),
+    border: Border.all(color: Colors.indigo, width: 2),
+    boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 8, offset: Offset(0, 4))],
+  ),
+  child: const Text('Hello'),
+),
+      ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
